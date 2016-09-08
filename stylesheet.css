@@ -1,0 +1,253 @@
+
+body {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: Black;
+	margin: 0;
+}
+
+body > div:first-child {
+	position: relative;
+	display: block;
+	width: 85%;
+	height: 80%;
+	top: 10%;
+	margin: auto;
+	background: LightSlateGray;
+}
+
+#calc_Window {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	height: 90%;
+	left: 2.5%;
+	top: 5%;
+	float: left;
+	background: #BDC7C0;
+	border-radius: 5px 0 0 5px;
+}
+
+#calc_Window + div {
+	position: relative;
+	display: inline-block;
+	width: 65%;
+	height: 90%;
+	right: 2.5%;
+	top: 5%;
+	float: right;
+	border-radius: 0 5px 5px 0;
+}
+
+#staging_Area {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 85%;
+	top: 0;
+	margin: 0;
+	border-radius: 5px 5px 0 0;
+}
+	
+	#staging_Area p {
+		margin: 15px;
+		font: 200 24px/24px Trebuchet MS, Calibri, Cambria Math;
+		color: rgba(27, 25, 25, 0.55);
+	}
+
+
+#output_Bar {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 15%;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.35);
+	border-radius: 0 0 0 5px;
+}
+	
+	#output_Bar > input {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 0 10px;
+		font: 500 24px/24px Cambria Math;
+		color: Black;
+		background: transparent;
+			/* background: #9EA7A1; */
+		border: none;
+		box-sizing: border-box;
+	}
+
+
+#calc_Editor {
+	background: DimGray;
+	box-sizing: border-box;
+}
+
+#calc_Editor > div:first-child {
+	position: relative;
+	display: inline-block;
+	width: 85%;
+	height: 100%;
+	float: left;
+}
+
+#calc_Editor > div:first-child > div:first-child {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 30%;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	justify-content: space-around;
+}
+	
+	#calc_Editor > div:first-child > div:first-child button {
+		width: auto;
+		height: 50px;
+		font: 700 40px/40px Trebuchet MS;
+	}
+
+
+#calc_Editor > div:first-child > div:nth-child(2) {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 70%;
+}
+
+#calc_Editor > div:first-child > div:nth-child(2) > div {
+	position: relative;
+	display: inline-table;
+}
+
+.funct_2nd {
+	position: absolute;
+	display: block;
+	left: 85%;
+	top: 110%;
+	transform: translateX(-50%);
+	font: 800 20px/20px Euclid, Cambria Math, serif;
+	color: #1DB4FF;
+}
+
+#powersPad {
+	position: relative;
+	display: inline-table;
+	width: 35%;
+	height: 100%;
+	float: left;
+}
+
+	#powersPad .powersPad_Row {
+		position: relative;
+		width: 100%;
+		height: 25%;
+		text-align: center;
+		vertical-align: text-bottom;
+		transform: translateY(15%);
+
+	}
+
+	#powersPad button {
+		position: relative;
+		width: 45%;
+		height: 50px;
+		margin-left: 2.5%;
+		font: 600 30px/50px Euclid;
+		vertical-align: text-bottom;
+	}
+
+
+#numPad {
+	position: relative;
+	display: inline-table;
+	width: 65%;
+	height: 100%;
+	float: right;
+	background: Black;
+}
+	
+	#numPad .numPad_Row {
+		width: 100%;
+		height: 25%;
+		transform: translateY(15%);
+	}
+
+	#numPad button {
+		width: 25%;
+		height: auto;
+		margin-left: 5.5%;
+		font: 700 50px/50px Cambria Math;
+	}
+
+
+#arithPad {
+	position: relative;
+	display: inline-flex;
+	width: 15%;
+	height: 100%;
+	float: right;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around;
+	justify-content: space-around;
+}
+
+	/* #numPad button, */
+	#arithPad button {
+		display: block;
+		width: auto;
+		height: auto;
+		font: 700 50px/50px Cambria Math;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

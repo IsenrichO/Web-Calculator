@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Calculator</title>
+
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<div>
+		<div id="calc_Window">
+			<div id="staging_Area">
+
+			</div>
+			<div id="output_Bar" defaultValue="">
+				<input type="textbox" value="" readonly />
+			</div>
+		</div>
+
+		<div id="calc_Editor">
+			<div>		
+				<div id="controlsPad">
+					<button class="control" type="button" name="Enclose">&#x28; &#x29;</button>							<!-- Unicode Character 'LEFT PARENTHESIS' (U+0028)/'RIGHT PARENTHESIS' (U+0029):  "(" / ")"  -->
+					<button class="control" type="button" name="Store" style="font-size: 30px;">STO &#x25b6;</button>						<!-- Symbol: Base Codepoint,(U+25B6):  "▶"  -->
+					<button class="control" type="button" name="All Clear">AC</button>
+					<button class="control" type="button" name="Clear Entry">CE</button>
+				</div>
+
+				
+				<div>
+					<div id="powersPad">
+						<div class="powersPad_Row">
+							<button class="power" type="button" name="squared">
+								<i>x</i>&sup2;
+								<span class="funct_2nd"><i>x</i>&sup3;</span>
+							</button>
+							<button class="power" type="button" name="square_Root">
+								&radic;<i>x</i>
+								<span class="funct_2nd">&#x221b;<i>x</i></span>																				<!-- Unicode Character 'CUBE ROOT' (U+221B):  "∛"  -->
+							</button>
+						</div>
+						<div class="powersPad_Row">
+							<button class="power" type="button" name="nth-power"><i>x</i>&#8319;</button>
+							<button class="power" type="button" name="nth-root"><i>&#8319;</i>&radic;</button>
+						</div>
+						<div class="powersPad_Row">
+							<button class="power" type="button" name="log-exponent"><span style="font-size: 20px; line-height: 30px;">10</span><sup><i style="line-height: 1px;">x</i></sup></button>
+							<button class="power" type="button" name="logarithm">log</button>
+						</div>
+						<div class="powersPad_Row">
+							<button class="power" type="button" name="natural-log-exp">e<sup><i>x</i></sup></button>
+							<button class="power" type="button" name="natural-log">ln</button>
+						</div>
+					</div>
+
+					<div id="numPad">
+						<div class="numPad_Row">
+							<button class="digit" type="button" name="digit_Seven" value="7">&#55;</button>
+							<button class="digit" type="button" name="digit_Eight" value="8">&#56;</button>
+							<button class="digit" type="button" name="digit_Nine" value="9">&#57;</button>
+						</div>
+						<div class="numPad_Row">
+							<button class="digit" type="button" name="digit_Four" value="4">&#52;</button>
+							<button class="digit" type="button" name="digit_Five" value="5">&#53;</button>
+							<button class="digit" type="button" name="digit_Six" value="6">&#54;</button>
+						</div>
+						<div class="numPad_Row">
+							<button class="digit" type="button" name="digit_One" value="1">&#49;</button>
+							<button class="digit" type="button" name="digit_Two" value="2">&#50;</button>
+							<button class="digit" type="button" name="digit_Three" value="3">&#51;</button>
+						</div>
+						<div class="numPad_Row">
+							<button class="digit" type="button" name="negate" value="-">&plusmn;</button>
+							<button class="digit" type="button" name="digit_Zero" value="0">&#48;</button>
+							<button class="digit" type="button" name="decimal" value=".">&#46;</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div id="arithPad">
+				<button class="operator" type="button" name="divide" value="/">&divide;</button>
+				<button class="operator" type="button" name="times" value="x">&times;</button>
+				<button class="operator" type="button" name="minus" value="-">&minus;</button>
+				<button class="operator" type="button" name="plus" value="+">&plus;</button>
+				<button class="evaluate" type="button" name="equals" value="=">&equals;</button>
+			</div>
+	  </div>
+	</div>
+
+</body>
+</html>
